@@ -19,7 +19,8 @@ class BuySellPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 20), // Add space below app bar
+            SizedBox(height: 20),
+             // Add space below app bar
             Container(
               width: 410,
               height: 106,
@@ -148,7 +149,8 @@ class BuySellPage extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    left: 1,
+                     
+                    left: 15,
                     top: 0,
                     child: Text(
                       'You pay',
@@ -162,7 +164,7 @@ class BuySellPage extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    left: 193,
+                    left: 260,
                     top: 9,
                     child: Text(
                       'Balance: \$15668.56',
@@ -179,21 +181,21 @@ class BuySellPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 40), 
-             Positioned(
-                    left: 1,
-                    top: 0,
-                    child: Text(
-                      'You recieve',
-                      style: TextStyle(
-                        color: Color(0xFFF5F5F5),
-                        fontSize: 20,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w500,
-                        height: 0,
-                      ),
-                    ),
-                  ),
+            SizedBox(height: 40),
+            Positioned(
+              left: 1,
+              top: 0,
+              child: Text(
+                'You recieve',
+                style: TextStyle(
+                  color: Color(0xFFF5F5F5),
+                  fontSize: 20,
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w500,
+                  height: 0,
+                ),
+              ),
+            ),
             SizedBox(height: 20), // Add space between the two containers
             Container(
               width: 410,
@@ -215,12 +217,10 @@ class BuySellPage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                
                 children: [
                   Container(
                     width: 185,
                     height: 60,
-                    
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -231,16 +231,42 @@ class BuySellPage extends StatelessWidget {
                           height: 32,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/image3.png'), 
+                              image: AssetImage('assets/images/image3.png'),
                               fit: BoxFit.cover,
                             ),
                           ),
                         ),
                         Positioned(
-                                    left: 50,
-                                    top: 4,
-                                    child:Text(
-                          'Bitcoin',
+                          left: 50,
+                          top: 4,
+                          child: Text(
+                            'Bitcoin',
+                            style: TextStyle(
+                              color: Color(0xFFF5F5F5),
+                              fontSize: 16,
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w500,
+                              height: 0,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 100),
+                  Container(
+                    width: 91, // Adjusted width
+                    height: double.infinity,
+                    padding: const EdgeInsets.only(
+                        top: 10, bottom: 9, left: 4), // Adjusted padding
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          '0.0095 BTC',
+                          textAlign: TextAlign.right,
                           style: TextStyle(
                             color: Color(0xFFF5F5F5),
                             fontSize: 16,
@@ -249,181 +275,157 @@ class BuySellPage extends StatelessWidget {
                             height: 0,
                           ),
                         ),
-                        ),
                       ],
                     ),
                   ),
-              SizedBox(width: 100),
-Container(
-  width: 91, // Adjusted width
-  height: double.infinity,
-  padding: const EdgeInsets.only(top: 10, bottom: 9, left: 4), // Adjusted padding
-  child: Row(
-    mainAxisSize: MainAxisSize.min,
-    mainAxisAlignment: MainAxisAlignment.start,
-    crossAxisAlignment: CrossAxisAlignment.center,
-    children: [
-      Text(
-        '0.0095 BTC',
-        textAlign: TextAlign.right,
-        style: TextStyle(
-          color: Color(0xFFF5F5F5),
-          fontSize: 16,
-          fontFamily: 'Poppins',
-          fontWeight: FontWeight.w500,
-          height: 0,
-        ),
-      ),
-    ],
-  ),
-),
-
                 ],
               ),
             ),
             SizedBox(height: 40),
             Column(
-  mainAxisAlignment: MainAxisAlignment.center,
-  crossAxisAlignment: CrossAxisAlignment.start,
-  children: [
-    Padding(
-      padding: const EdgeInsets.only(left: 16.0),
-      child: Text(
-        'Payment method',
-        style: TextStyle(
-          color: Color(0xFFF5F5F5),
-          fontSize: 20,
-          fontFamily: 'Poppins',
-          fontWeight: FontWeight.w500,
-          height: 0,
-        ),
-      ),
-    ),
-    SizedBox(height: 8),
-    Container(
-      width: 410,
-      height: 192,
-      padding: const EdgeInsets.symmetric(vertical: 13,horizontal: 13),
-      clipBehavior: Clip.antiAlias,
-      decoration: ShapeDecoration(
-        color: Color(0xFF252530),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Container(
-            width: 410,
-            padding: const EdgeInsets.only(
-              top: 20,
-              left: 16,
-              right: 16,
-              bottom: 10,
-            ),
-            clipBehavior: Clip.antiAlias,
-            decoration: ShapeDecoration(
-              shape: RoundedRectangleBorder(
-                side: BorderSide(width: 1, color: Color(0xFFAAAAAA)),
-                borderRadius: BorderRadius.circular(8),
-              ),
-            ),
-            child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  'Google pay',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Color(0xFFAAAAAA),
-                    fontSize: 14,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w500,
-                    height: 0,
+                Padding(
+                  padding: const EdgeInsets.only(left: 16.0),
+                  child: Text(
+                    'Payment method',
+                    style: TextStyle(
+                      color: Color(0xFFF5F5F5),
+                      fontSize: 20,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w500,
+                      height: 0,
+                    ),
                   ),
                 ),
-                SizedBox(width: 154),
+                SizedBox(height: 8),
                 Container(
-                  width: 28,
-                  height: 28,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/image8.png'),
-                      fit: BoxFit.fill,
+                  width: 410,
+                  height: 192,
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 13, horizontal: 13),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFF252530),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
                     ),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 410,
+                        padding: const EdgeInsets.only(
+                          top: 20,
+                          left: 16,
+                          right: 16,
+                          bottom: 10,
+                        ),
+                        clipBehavior: Clip.antiAlias,
+                        decoration: ShapeDecoration(
+                          shape: RoundedRectangleBorder(
+                            side:
+                                BorderSide(width: 1, color: Color(0xFFAAAAAA)),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Google pay',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Color(0xFFAAAAAA),
+                                fontSize: 14,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.w500,
+                                height: 0,
+                              ),
+                            ),
+                            SizedBox(width: 154),
+                            Container(
+                              width: 28,
+                              height: 28,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage('assets/images/image8.png'),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 8),
+                      Container(
+                        width: 410,
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16, vertical: 11),
+                        clipBehavior: Clip.antiAlias,
+                        decoration: ShapeDecoration(
+                          shape: RoundedRectangleBorder(
+                            side: BorderSide(
+                              width: 1,
+                              color: Color(0xFFF5F5F5),
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Visa*3783',
+                              style: TextStyle(
+                                color: Color(0xFFF5F5F5),
+                                fontSize: 14,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.w500,
+                                height: 0,
+                              ),
+                            ),
+                            SizedBox(width: 165),
+                            Container(
+                              width: 28,
+                              height: 28,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage('assets/images/image9.png'),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        '+ ADD NEW PAYMENT METHOD',
+                        style: TextStyle(
+                          color: Color(0xFFF5F5F5),
+                          fontSize: 16,
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w500,
+                          height: 0,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
             ),
-          ),
-          SizedBox(height: 8),
-          Container(
-            width: 410,
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 11),
-            clipBehavior: Clip.antiAlias,
-            decoration: ShapeDecoration(
-              shape: RoundedRectangleBorder(
-                side: BorderSide(
-                  width: 1,
-                  color: Color(0xFFF5F5F5),
-                ),
-                borderRadius: BorderRadius.circular(8),
-              ),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text(
-                  'Visa*3783',
-                  style: TextStyle(
-                    color: Color(0xFFF5F5F5),
-                    fontSize: 14,
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w500,
-                    height: 0,
-                  ),
-                ),
-                SizedBox(width: 165),
-                Container(
-                  width: 28,
-                  height: 28,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/image9.png'),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(height: 8),
-          Text(
-            '+ ADD NEW PAYMENT METHOD',
-            style: TextStyle(
-              color: Color(0xFFF5F5F5),
-              fontSize: 16,
-              fontFamily: 'Poppins',
-              fontWeight: FontWeight.w500,
-              height: 0,
-            ),
-          ),
-        ],
-      ),
-    ),
-  ],
-),
 
-             SizedBox(height: 100),
+            SizedBox(height: 100),
             Container(
               width: 400,
               height: 56,
-              padding: const EdgeInsets.symmetric(vertical: 13,horizontal: 13),
-       
+              padding: const EdgeInsets.symmetric(vertical: 13, horizontal: 13),
               clipBehavior: Clip.antiAlias,
               decoration: ShapeDecoration(
                 color: Color(0xFFBFF5C7),
@@ -450,188 +452,190 @@ Container(
                 ],
               ),
             ),
-             SizedBox(height: 20), 
-                   Container(
-width: 410,
-height: 90,
-padding: const EdgeInsets.only(
-top: 20,
-left: 36,
-right: 35,
-bottom: 21,
-),
-clipBehavior: Clip.antiAlias,
-decoration: ShapeDecoration(
-color: Color(0xFF17171F),
-shape: RoundedRectangleBorder(
-side: BorderSide(width: 1, color: Color(0xFFAAAAAA)),
-borderRadius: BorderRadius.only(
-topLeft: Radius.circular(24),
-topRight: Radius.circular(24),
-),
-),
-),
-child: Row(
-mainAxisSize: MainAxisSize.min,
-mainAxisAlignment: MainAxisAlignment.center,
-crossAxisAlignment: CrossAxisAlignment.center,
-children: [
-Container(
-height: double.infinity,
-child: Row(
-mainAxisSize: MainAxisSize.min,
-mainAxisAlignment: MainAxisAlignment.start,
-crossAxisAlignment: CrossAxisAlignment.start,
-children: [
-Container(
-child: Column(
-mainAxisSize: MainAxisSize.min,
-mainAxisAlignment: MainAxisAlignment.center,
-crossAxisAlignment: CrossAxisAlignment.center,
-children: [
-Container(
-width: 24,
-height: 24,
-decoration: BoxDecoration(
-image: DecorationImage(
- image: AssetImage('assets/images/image 8.png'), 
-fit: BoxFit.fill,
-),
-),
-),
-const SizedBox(height: 4),
-GestureDetector( // Wrap with GestureDetector for detecting taps
-              onTap: () {
-                // Navigate to BuySellPage when tapped
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Home()),
-                );
-              },
-  child: Text(
-  'Wallet',
-  style: TextStyle(
-  color: Color(0xFFBFF5C7),
-  fontSize: 12,
-  fontFamily: 'Inter',
-  fontWeight: FontWeight.w400,
-  height: 0,
-  ),
-  ),
-),
-],
-),
-),
-const SizedBox(width: 36),
-Container(
-child: Column(
-mainAxisSize: MainAxisSize.min,
-mainAxisAlignment: MainAxisAlignment.center,
-crossAxisAlignment: CrossAxisAlignment.center,
-children: [
-Container(
-width: 24,
-height: 24,
-decoration: BoxDecoration(
-image: DecorationImage(
- image: AssetImage('assets/images/image 8 (1).png'), 
-fit: BoxFit.fill,
-),
-),
-),
-const SizedBox(height: 4),
-GestureDetector( // Wrap with GestureDetector for detecting taps
-              onTap: () {
-            
-                
-              },
-  child: Text(
-  'Buy/Sell',
-  style: TextStyle(
-  color: Color(0xFFAAAAAA),
-  fontSize: 12,
-  fontFamily: 'Inter',
-  fontWeight: FontWeight.w400,
-  height: 0,
-  ),
-  ),
-),
-],
-),
-),
-const SizedBox(width: 36),
-Container(
-child: Column(
-mainAxisSize: MainAxisSize.min,
-mainAxisAlignment: MainAxisAlignment.center,
-crossAxisAlignment: CrossAxisAlignment.center,
-children: [
-Container(
-width: 24,
-height: 24,
-decoration: BoxDecoration(
-image: DecorationImage(
- image: AssetImage('assets/images/image 10.png'), 
-fit: BoxFit.fill,
-),
-),
-),
-const SizedBox(height: 4),
-Text(
-'Academy',
-style: TextStyle(
-color: Color(0xFFAAAAAA),
-fontSize: 12,
-fontFamily: 'Inter',
-fontWeight: FontWeight.w400,
-height: 0,
-),
-),
-],
-),
-),
-const SizedBox(width: 36),
-Container(
-child: Column(
-mainAxisSize: MainAxisSize.min,
-mainAxisAlignment: MainAxisAlignment.center,
-crossAxisAlignment: CrossAxisAlignment.center,
-children: [
-Container(
-width: 24,
-height: 24,
-decoration: BoxDecoration(
-image: DecorationImage(
- image: AssetImage('assets/images/image 8 (2).png'), 
-fit: BoxFit.fill,
-),
-),
-),
-const SizedBox(height: 4),
-Text(
-'Settings',
-style: TextStyle(
-color: Color(0xFFAAAAAA),
-fontSize: 12,
-fontFamily: 'Inter',
-fontWeight: FontWeight.w400,
-height: 0,
-),
-),
-],
-),
-),
-],
-),
-),
-],
-),
-)
-
+            SizedBox(height: 20),
+            Container(
+              width: 410,
+              height: 90,
+              padding: const EdgeInsets.only(
+                top: 20,
+                left: 36,
+                right: 35,
+                bottom: 21,
+              ),
+              clipBehavior: Clip.antiAlias,
+              decoration: ShapeDecoration(
+                color: Color(0xFF17171F),
+                shape: RoundedRectangleBorder(
+                  side: BorderSide(width: 1, color: Color(0xFFAAAAAA)),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(24),
+                    topRight: Radius.circular(24),
+                  ),
+                ),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    height: double.infinity,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 24,
+                                height: 24,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image:
+                                        AssetImage('assets/images/image 8.png'),
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              GestureDetector(
+                                // Wrap with GestureDetector for detecting taps
+                                onTap: () {
+                                  // Navigate to BuySellPage when tapped
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Home()),
+                                  );
+                                },
+                                child: Text(
+                                  'Wallet',
+                                  style: TextStyle(
+                                    color: Color(0xFFBFF5C7),
+                                    fontSize: 12,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w400,
+                                    height: 0,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 36),
+                        Container(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 24,
+                                height: 24,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/images/image 8 (1).png'),
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              GestureDetector(
+                                // Wrap with GestureDetector for detecting taps
+                                onTap: () {},
+                                child: Text(
+                                  'Buy/Sell',
+                                  style: TextStyle(
+                                    color: Color(0xFFAAAAAA),
+                                    fontSize: 12,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w400,
+                                    height: 0,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 36),
+                        Container(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 24,
+                                height: 24,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/images/image 10.png'),
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                'Academy',
+                                style: TextStyle(
+                                  color: Color(0xFFAAAAAA),
+                                  fontSize: 12,
+                                  fontFamily: 'Inter',
+                                  fontWeight: FontWeight.w400,
+                                  height: 0,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 36),
+                        Container(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 24,
+                                height: 24,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/images/image 8 (2).png'),
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                'Settings',
+                                style: TextStyle(
+                                  color: Color(0xFFAAAAAA),
+                                  fontSize: 12,
+                                  fontFamily: 'Inter',
+                                  fontWeight: FontWeight.w400,
+                                  height: 0,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
-            ),
-          );
-       
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

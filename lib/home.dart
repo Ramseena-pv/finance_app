@@ -1,9 +1,12 @@
 import 'package:finance/academy.dart';
 import 'package:finance/buysell.dart';
+import 'package:finance/recieve.dart';
 import 'package:finance/send.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:finance/settins.dart';
+import 'package:finance/swap.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -92,7 +95,7 @@ class Home extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Send()),
+                                      builder: (context) => const ReceiveScreen()),
                                 );
                               },
                               child: Image.asset('assets/images/image10.png',
@@ -124,7 +127,7 @@ class Home extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const Send()),
+                                      builder: (context) => const Swap()),
                                 );
                               },
                               child: Image.asset('assets/images/image11.png',
@@ -745,14 +748,25 @@ Row(
                                     ),
                                   ),
                                   const SizedBox(height: 4),
-                                  const Text(
-                                    'Academy',
-                                    style: TextStyle(
-                                      color: Color(0xFFAAAAAA),
-                                      fontSize: 12,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0,
+                                  GestureDetector(
+                              // Wrap with GestureDetector for detecting taps
+                              onTap: () {
+                                // Navigate to BuySellPage when tapped
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const AcademyScreen()),
+                                );
+                              },
+                                    child: const Text(
+                                      'Academy',
+                                      style: TextStyle(
+                                        color: Color(0xFFAAAAAA),
+                                        fontSize: 12,
+                                        fontFamily: 'Inter',
+                                        fontWeight: FontWeight.w400,
+                                        height: 0,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -779,7 +793,15 @@ Row(
                                     ),
                                     const SizedBox(height: 4),
                                     GestureDetector(
-                                      onTap: () {},
+                                    onTap: () {
+                                      // Navigate to BuySellPage when tapped
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                SettingsPage()),
+                                      );
+                                    },
                                       child: const Text(
                                         'Settings',
                                         style: TextStyle(
