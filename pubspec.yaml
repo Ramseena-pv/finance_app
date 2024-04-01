@@ -78,6 +78,12 @@ flutter:
     - assets/images/image 13.png
     - assets/images/image 0.png
     - assets/images/QR Code.png
+    - assets/images/Arrow 2.png
+    - assets/images/Frame 3.png
+    - assets/images/Frame 1.png
+    - assets/images/Frame 2.png
+    - assets/images/Frame 3 (1).png
+    - assets/images/Graph.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

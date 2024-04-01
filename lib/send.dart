@@ -1,3 +1,4 @@
+import 'package:finance/home.dart';
 import 'package:flutter/material.dart';
 
 class Send extends StatelessWidget {
@@ -11,7 +12,10 @@ class Send extends StatelessWidget {
         backgroundColor: Colors.black,
         leading: IconButton(
           icon: Image.asset('assets/images/Frame 5.png'),
-          onPressed: () {},
+          onPressed: () { Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Home()),
+            );},
         ),
         title: Text(
           'Send',
@@ -27,7 +31,7 @@ class Send extends StatelessWidget {
       
       body: Padding(
         padding: const EdgeInsets.only(
-            top: 30,bottom: 4, left: 16), // Adjust left padding here
+            top: 30,bottom: 4, left: 16), 
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -43,7 +47,7 @@ class Send extends StatelessWidget {
             ),
             SizedBox(
                 height:
-                    6), // Add some vertical space between the text and the container
+                    6), 
             Container(
               width: 328,
               height: 56,
@@ -58,7 +62,7 @@ class Send extends StatelessWidget {
                 children: [
                   SizedBox(
                       width:
-                          16), // Add some horizontal space between the container edge and the image
+                          16),
                   Container(
                     width: 32,
                     height: 32,
@@ -71,7 +75,7 @@ class Send extends StatelessWidget {
                   ),
                   SizedBox(
                       width:
-                          16), // Add some space between the image and the text
+                          16), 
                   Text(
                     'Bitcoin',
                     style: TextStyle(
@@ -98,7 +102,7 @@ class Send extends StatelessWidget {
             ),
             SizedBox(
                 height:
-                    16), // Add some vertical space between the container and the 'address' text
+                    16), 
             Text(
               'Address',
               style: TextStyle(
@@ -109,7 +113,7 @@ class Send extends StatelessWidget {
             ),
             SizedBox(
                 height:
-                    6), // Add some vertical space between the 'address' text and the container
+                    6), 
             Container(
               width: 328,
               height: 56,
@@ -157,7 +161,7 @@ class Send extends StatelessWidget {
             ),
             SizedBox(
                 height:
-                    6), // Add some vertical space between the second container and the additional text
+                    6), 
             Text(
               'Only BTC can be sent to this address',
               style: TextStyle(
@@ -170,7 +174,7 @@ class Send extends StatelessWidget {
             ),
              SizedBox(
                 height:
-                    16), // Add some vertical space between the container and the 'address' text
+                    16), 
             Text(
               'Amount',
               style: TextStyle(
@@ -181,7 +185,7 @@ class Send extends StatelessWidget {
             ),
             SizedBox(
                 height:
-                    6), // Add some vertical space between the additional text and the container
+                    6), 
             Container(
               width: 328,
               height: 56,
@@ -234,7 +238,7 @@ class Send extends StatelessWidget {
             ),
             SizedBox(
                 height:
-                    6), // Add some vertical space between the second container and the additional text
+                    6), 
             Text(
               'Balance: 3.56 BTC',
               style: TextStyle(

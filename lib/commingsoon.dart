@@ -20,11 +20,11 @@ class comingsoon extends StatelessWidget {
                 height: 22,
                 clipBehavior: Clip.antiAlias,
                 decoration: BoxDecoration(
-                  color: Colors.black, // Set the color of the container to white
+                  color: Colors.black, 
                 ),
                 child: GestureDetector(
                                     onTap: () {
-                                      // Navigate to BuySellPage when tapped
+                                     
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
@@ -33,13 +33,12 @@ class comingsoon extends StatelessWidget {
                                       );
                                     },
                   child: Image.asset(
-                    'assets/images/Frame 5.png', // Replace 'path_to_your_image' with the actual path to your image asset
-                    fit: BoxFit.cover, // Adjust the fit as needed
+                    'assets/images/Frame 5.png', 
                   ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 350, left: 38), // Adjust padding for text position
+                padding: const EdgeInsets.only(top: 350, left: 38), 
                 child: Text(
                   'We will be right back',
                   style: TextStyle(

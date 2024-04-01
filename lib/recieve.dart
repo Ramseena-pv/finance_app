@@ -39,7 +39,7 @@ class ReceiveScreen extends StatelessWidget {
               width: 64,
               height: 64,
             ),
-            const SizedBox(height: 10), // Adding some space between the image and text
+            const SizedBox(height: 10), 
             const Text(
               "BTC (BEP20)",
               style: TextStyle(
@@ -97,13 +97,13 @@ class ReceiveScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const Spacer(), // Add a spacer to push the buttons to the bottom
+            const Spacer(), 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    // Add functionality for sharing
+                   
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(66, 70, 71, 69),
@@ -133,7 +133,7 @@ class ReceiveScreen extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 46), // Optional: Add some space below the buttons
+            const SizedBox(height: 46),
           ],
         ),
       ),

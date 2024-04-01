@@ -1,4 +1,6 @@
+import 'package:finance/academy.dart';
 import 'package:finance/home.dart';
+import 'package:finance/settins.dart';
 import 'package:flutter/material.dart';
 
 class BuySellPage extends StatelessWidget {
@@ -8,19 +10,19 @@ class BuySellPage extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text(
+        title: const Text(
           'Buy & Sell',
-          style: TextStyle(color: Colors.white), // Set text color to white
+          style: TextStyle(color: Colors.white), 
         ),
-        centerTitle: true, // Center the title
-        elevation: 0, // Remove app bar shadow
+        centerTitle: true, 
+        elevation: 0,
       ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 20),
-             // Add space below app bar
+            const SizedBox(height: 20),
+             
             Container(
               width: 410,
               height: 106,
@@ -34,7 +36,7 @@ class BuySellPage extends StatelessWidget {
                       height: 68,
                       clipBehavior: Clip.antiAlias,
                       decoration: ShapeDecoration(
-                        color: Color(0xFF252530),
+                        color: const Color(0xFF252530),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
@@ -47,11 +49,11 @@ class BuySellPage extends StatelessWidget {
                             child: Container(
                               width: 32,
                               height: 32,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 image: DecorationImage(
                                   image: NetworkImage(
                                       "https://via.placeholder.com/32x32"),
-                                  // fit: BoxFit.cover,
+                                  
                                 ),
                               ),
                             ),
@@ -78,7 +80,7 @@ class BuySellPage extends StatelessWidget {
                                               BorderRadius.circular(107),
                                         ),
                                       ),
-                                      child: Row(
+                                      child: const Row(
                                         mainAxisSize: MainAxisSize.min,
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
@@ -100,7 +102,7 @@ class BuySellPage extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Positioned(
+                                  const Positioned(
                                     left: 44,
                                     top: 4,
                                     child: Text(
@@ -124,7 +126,7 @@ class BuySellPage extends StatelessWidget {
                             child: Container(
                               padding:
                                   const EdgeInsets.only(top: 10, bottom: 9),
-                              child: Row(
+                              child: const Row(
                                 mainAxisSize: MainAxisSize.min,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -148,7 +150,7 @@ class BuySellPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                      
                     left: 15,
                     top: 0,
@@ -163,7 +165,7 @@ class BuySellPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     left: 260,
                     top: 9,
                     child: Text(
@@ -181,8 +183,8 @@ class BuySellPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 40),
-            Positioned(
+            const SizedBox(height: 40),
+            const Positioned(
               left: 1,
               top: 0,
               child: Text(
@@ -196,7 +198,7 @@ class BuySellPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20), // Add space between the two containers
+            const SizedBox(height: 20), 
             Container(
               width: 410,
               height: 75,
@@ -208,7 +210,7 @@ class BuySellPage extends StatelessWidget {
               ),
               clipBehavior: Clip.antiAlias,
               decoration: ShapeDecoration(
-                color: Color(0xFF252530),
+                color: const Color(0xFF252530),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
@@ -218,7 +220,7 @@ class BuySellPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
+                  SizedBox(
                     width: 185,
                     height: 60,
                     child: Column(
@@ -229,16 +231,16 @@ class BuySellPage extends StatelessWidget {
                         Container(
                           width: 32,
                           height: 32,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage('assets/images/image3.png'),
                               fit: BoxFit.cover,
                             ),
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           left: 50,
-                          top: 4,
+                          top: 2,
                           child: Text(
                             'Bitcoin',
                             style: TextStyle(
@@ -253,13 +255,13 @@ class BuySellPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(width: 100),
+                  const SizedBox(width: 100),
                   Container(
-                    width: 91, // Adjusted width
+                    width: 91, 
                     height: double.infinity,
                     padding: const EdgeInsets.only(
-                        top: 10, bottom: 9, left: 4), // Adjusted padding
-                    child: Row(
+                        top: 10, bottom: 9, left: 4), 
+                    child: const Row(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -281,13 +283,13 @@ class BuySellPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 40),
+            const SizedBox(height: 40),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 16.0),
+                const Padding(
+                  padding: EdgeInsets.only(left: 16.0),
                   child: Text(
                     'Payment method',
                     style: TextStyle(
@@ -299,7 +301,7 @@ class BuySellPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Container(
                   width: 410,
                   height: 192,
@@ -307,7 +309,7 @@ class BuySellPage extends StatelessWidget {
                       const EdgeInsets.symmetric(vertical: 13, horizontal: 13),
                   clipBehavior: Clip.antiAlias,
                   decoration: ShapeDecoration(
-                    color: Color(0xFF252530),
+                    color: const Color(0xFF252530),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -328,7 +330,7 @@ class BuySellPage extends StatelessWidget {
                         decoration: ShapeDecoration(
                           shape: RoundedRectangleBorder(
                             side:
-                                BorderSide(width: 1, color: Color(0xFFAAAAAA)),
+                                const BorderSide(width: 1, color: Color(0xFFAAAAAA)),
                             borderRadius: BorderRadius.circular(8),
                           ),
                         ),
@@ -336,7 +338,7 @@ class BuySellPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Text(
+                            const Text(
                               'Google pay',
                               textAlign: TextAlign.center,
                               style: TextStyle(
@@ -347,11 +349,11 @@ class BuySellPage extends StatelessWidget {
                                 height: 0,
                               ),
                             ),
-                            SizedBox(width: 154),
+                            const SizedBox(width: 154),
                             Container(
                               width: 28,
                               height: 28,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('assets/images/image8.png'),
                                   fit: BoxFit.fill,
@@ -361,7 +363,7 @@ class BuySellPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(height: 8),
+                      const SizedBox(height: 8),
                       Container(
                         width: 410,
                         padding: const EdgeInsets.symmetric(
@@ -369,7 +371,7 @@ class BuySellPage extends StatelessWidget {
                         clipBehavior: Clip.antiAlias,
                         decoration: ShapeDecoration(
                           shape: RoundedRectangleBorder(
-                            side: BorderSide(
+                            side: const BorderSide(
                               width: 1,
                               color: Color(0xFFF5F5F5),
                             ),
@@ -380,7 +382,7 @@ class BuySellPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Text(
+                            const Text(
                               'Visa*3783',
                               style: TextStyle(
                                 color: Color(0xFFF5F5F5),
@@ -390,11 +392,11 @@ class BuySellPage extends StatelessWidget {
                                 height: 0,
                               ),
                             ),
-                            SizedBox(width: 165),
+                            const SizedBox(width: 165),
                             Container(
                               width: 28,
                               height: 28,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 image: DecorationImage(
                                   image: AssetImage('assets/images/image9.png'),
                                   fit: BoxFit.fill,
@@ -404,8 +406,8 @@ class BuySellPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(height: 8),
-                      Text(
+                      const SizedBox(height: 8),
+                      const Text(
                         '+ ADD NEW PAYMENT METHOD',
                         style: TextStyle(
                           color: Color(0xFFF5F5F5),
@@ -421,19 +423,19 @@ class BuySellPage extends StatelessWidget {
               ],
             ),
 
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
             Container(
               width: 400,
               height: 56,
               padding: const EdgeInsets.symmetric(vertical: 13, horizontal: 13),
               clipBehavior: Clip.antiAlias,
               decoration: ShapeDecoration(
-                color: Color(0xFFBFF5C7),
+                color: const Color(0xFFBFF5C7),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
-              child: Row(
+              child: const Row(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -452,7 +454,7 @@ class BuySellPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
               width: 410,
               height: 90,
@@ -463,16 +465,17 @@ class BuySellPage extends StatelessWidget {
                 bottom: 21,
               ),
               clipBehavior: Clip.antiAlias,
-              decoration: ShapeDecoration(
-                color: Color(0xFF17171F),
-                shape: RoundedRectangleBorder(
-                  side: BorderSide(width: 1, color: Color(0xFFAAAAAA)),
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(24),
-                    topRight: Radius.circular(24),
-                  ),
-                ),
-              ),
+              decoration: BoxDecoration(
+                 borderRadius: BorderRadius.circular(24),
+                            border: const Border(
+                              top: BorderSide(
+                                width: 1,
+                                color: Color.fromARGB(255, 238, 238, 240),
+                              ),
+                            ),
+                          ),
+                
+                 
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -494,7 +497,7 @@ class BuySellPage extends StatelessWidget {
                               Container(
                                 width: 24,
                                 height: 24,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   image: DecorationImage(
                                     image:
                                         AssetImage('assets/images/image 8.png'),
@@ -504,16 +507,16 @@ class BuySellPage extends StatelessWidget {
                               ),
                               const SizedBox(height: 4),
                               GestureDetector(
-                                // Wrap with GestureDetector for detecting taps
+                                
                                 onTap: () {
-                                  // Navigate to BuySellPage when tapped
+                                
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => Home()),
+                                        builder: (context) => const Home()),
                                   );
                                 },
-                                child: Text(
+                                child: const Text(
                                   'Wallet',
                                   style: TextStyle(
                                     color: Color(0xFFBFF5C7),
@@ -528,62 +531,35 @@ class BuySellPage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: 36),
-                        Container(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 24,
-                                height: 24,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                        'assets/images/image 8 (1).png'),
-                                    fit: BoxFit.fill,
-                                  ),
+                        Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 24,
+                              height: 24,
+                              decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      'assets/images/image 8 (1).png'),
+                                  fit: BoxFit.fill,
                                 ),
                               ),
-                              const SizedBox(height: 4),
-                              GestureDetector(
-                                // Wrap with GestureDetector for detecting taps
-                                onTap: () {},
-                                child: Text(
-                                  'Buy/Sell',
-                                  style: TextStyle(
-                                    color: Color(0xFFAAAAAA),
-                                    fontSize: 12,
-                                    fontFamily: 'Inter',
-                                    fontWeight: FontWeight.w400,
-                                    height: 0,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(width: 36),
-                        Container(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 24,
-                                height: 24,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                        'assets/images/image 10.png'),
-                                    fit: BoxFit.fill,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(height: 4),
-                              Text(
-                                'Academy',
+                            ),
+                            const SizedBox(height: 4),
+                            GestureDetector(
+                                  onTap: () {
+                                   
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              BuySellPage()),
+                                    );
+                                  },
+                              child: const Text(
+                                'Buy/Sell',
                                 style: TextStyle(
                                   color: Color(0xFFAAAAAA),
                                   fontSize: 12,
@@ -592,40 +568,90 @@ class BuySellPage extends StatelessWidget {
                                   height: 0,
                                 ),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                         const SizedBox(width: 36),
-                        Container(
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                width: 24,
-                                height: 24,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                        'assets/images/image 8 (2).png'),
-                                    fit: BoxFit.fill,
-                                  ),
+                        Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 24,
+                              height: 24,
+                              decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      'assets/images/image 10.png'),
+                                  fit: BoxFit.fill,
                                 ),
                               ),
-                              const SizedBox(height: 4),
-                              Text(
-                                'Settings',
-                                style: TextStyle(
-                                  color: Color(0xFFAAAAAA),
-                                  fontSize: 12,
-                                  fontFamily: 'Inter',
-                                  fontWeight: FontWeight.w400,
-                                  height: 0,
+                            ),
+                            const SizedBox(height: 4),
+                             GestureDetector(
+                                  onTap: () {
+                                   
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                            const AcademyScreen()),
+                                    );
+                                  },
+                                  child:const Text(
+                              'Academy',
+                              style: TextStyle(
+                                color: Color(0xFFAAAAAA),
+                                fontSize: 12,
+                                fontFamily: 'Inter',
+                                fontWeight: FontWeight.w400,
+                                height: 0,
+                              ),
+                            ),
+                             ),
+                          ],
+                        ),
+                        const SizedBox(width: 36),
+                        Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 24,
+                              height: 24,
+                              decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      'assets/images/image 8 (2).png'),
+                                  fit: BoxFit.fill,
                                 ),
                               ),
-                            ],
-                          ),
+                            ),
+                            const SizedBox(height: 4),
+                            GestureDetector(
+                                  onTap: () {
+                                   
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                             const SettingsPage()),
+                                    );
+                                  },
+                              child:const Text(
+                              'Settings',
+                              style: TextStyle(
+                                color: Color(0xFFAAAAAA),
+                                fontSize: 12,
+                                fontFamily: 'Inter',
+                                fontWeight: FontWeight.w400,
+                                height: 0,
+                              ),
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),

@@ -1,5 +1,8 @@
+import 'package:finance/buysell.dart';
+import 'package:finance/home.dart';
+import 'package:finance/settins.dart';
 import 'package:flutter/material.dart';
-// Import your BuySellPage file here
+
 
 class AcademyScreen extends StatelessWidget {
   const AcademyScreen({Key? key}) : super(key: key);
@@ -40,11 +43,11 @@ class AcademyScreen extends StatelessWidget {
               ),
             ),
           ),
-          
-           Padding(
-            padding: const EdgeInsets.only(left: 8, right: 8, top: 16), // Adjust padding as needed
+          Padding(
+            padding: const EdgeInsets.only(
+                left: 8, right: 8, top: 16), 
             child: Container(
-              width: double.infinity, // Occupy full width
+              width: double.infinity, 
               height: 106,
               decoration: BoxDecoration(
                 color: const Color(0xFF252530),
@@ -52,7 +55,7 @@ class AcademyScreen extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  const SizedBox(width: 24), // Left spacing
+                  const SizedBox(width: 24), 
                   Container(
                     width: 38,
                     height: 38,
@@ -63,7 +66,8 @@ class AcademyScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 32), // Increased spacing between image and text
+                  const SizedBox(
+                      width: 32),
                   const Expanded(
                     child: Text(
                       'Course 1',
@@ -81,9 +85,10 @@ class AcademyScreen extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 8, right: 8, top: 16), // Adjust padding as needed
+            padding: const EdgeInsets.only(
+                left: 8, right: 8, top: 16), 
             child: Container(
-              width: double.infinity, // Occupy full width
+              width: double.infinity, 
               height: 106,
               decoration: BoxDecoration(
                 color: const Color(0xFF252530),
@@ -91,7 +96,7 @@ class AcademyScreen extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  const SizedBox(width: 24), // Left spacing
+                  const SizedBox(width: 24), 
                   Container(
                     width: 38,
                     height: 38,
@@ -102,7 +107,8 @@ class AcademyScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 32), // Increased spacing between image and text
+                  const SizedBox(
+                      width: 32), 
                   const Expanded(
                     child: Text(
                       'Course 2',
@@ -119,11 +125,11 @@ class AcademyScreen extends StatelessWidget {
               ),
             ),
           ),
-          
           Padding(
-            padding: const EdgeInsets.only(left: 8, right: 8, top: 16), // Adjust padding as needed
+            padding: const EdgeInsets.only(
+                left: 8, right: 8, top: 16), 
             child: Container(
-              width: double.infinity, // Occupy full width
+              width: double.infinity, 
               height: 106,
               decoration: BoxDecoration(
                 color: const Color(0xFF252530),
@@ -131,7 +137,7 @@ class AcademyScreen extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  const SizedBox(width: 24), // Left spacing
+                  const SizedBox(width: 24), 
                   Container(
                     width: 38,
                     height: 38,
@@ -142,7 +148,8 @@ class AcademyScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 32), // Increased spacing between image and text
+                  const SizedBox(
+                      width: 32), 
                   const Expanded(
                     child: Text(
                       'Course 4',
@@ -159,11 +166,11 @@ class AcademyScreen extends StatelessWidget {
               ),
             ),
           ),
-         
-           Padding(
-            padding: const EdgeInsets.only(left: 8, right: 8, top: 16), // Adjust padding as needed
+          Padding(
+            padding: const EdgeInsets.only(
+                left: 8, right: 8, top: 16), 
             child: Container(
-              width: double.infinity, // Occupy full width
+              width: double.infinity,
               height: 106,
               decoration: BoxDecoration(
                 color: const Color(0xFF252530),
@@ -171,7 +178,7 @@ class AcademyScreen extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  const SizedBox(width: 24), // Left spacing
+                  const SizedBox(width: 24), 
                   Container(
                     width: 38,
                     height: 38,
@@ -182,7 +189,8 @@ class AcademyScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(width: 32), // Increased spacing between image and text
+                  const SizedBox(
+                      width: 32), 
                   const Expanded(
                     child: Text(
                       'Course 5',
@@ -199,11 +207,11 @@ class AcademyScreen extends StatelessWidget {
               ),
             ),
           ),
-          
-         
-          SizedBox(height: 165), // Added SizedBox for spacing
+          SizedBox(
+            height: 165,
+          ),
           Container(
-            width: 410,
+            width: 400,
             height: 90,
             padding: const EdgeInsets.only(
               top: 20,
@@ -214,7 +222,7 @@ class AcademyScreen extends StatelessWidget {
             clipBehavior: Clip.antiAlias,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(24),
-              border: Border(
+              border: const Border(
                 top: BorderSide(
                   width: 1,
                   color: Color.fromARGB(255, 238, 238, 240),
@@ -226,144 +234,191 @@ class AcademyScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                // Wallet
                 Container(
                   height: double.infinity,
-                  child: Column(
+                  child: Row(
                     mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        width: 24,
-                        height: 24,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/image 8.png'),
-                            fit: BoxFit.fill,
-                          ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 24,
+                              height: 24,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image:
+                                      AssetImage('assets/images/image 8.png'),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            GestureDetector(
+                                  onTap: () {
+                                    
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                             const Home()),
+                                    );
+                                  },
+                              child:Text(
+                              'Wallet',
+                              style: TextStyle(
+                                color: Color(0xFFBFF5C7),
+                                fontSize: 12,
+                                fontFamily: 'Inter',
+                                fontWeight: FontWeight.w400,
+                                height: 0,
+                              ),
+                            ),
+                            ),
+                          ],
                         ),
                       ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Wallet',
-                        style: TextStyle(
-                          color: Color(0xFFAAAAAA),
-                          fontSize: 12,
-                          fontFamily: 'Inter',
-                          fontWeight: FontWeight.w400,
-                          height: 0,
+                      const SizedBox(width: 36),
+                      Container(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 24,
+                              height: 24,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      'assets/images/image 8 (1).png'),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                             BuySellPage()),
+                                    );
+                                  },
+                            
+                             
+                              child: Text(
+                                'Buy/Sell',
+                                style: TextStyle(
+                                  color: Color(0xFFAAAAAA),
+                                  fontSize: 12,
+                                  fontFamily: 'Inter',
+                                  fontWeight: FontWeight.w400,
+                                  height: 0,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(width: 36),
+                      Container(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 24,
+                              height: 24,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      'assets/images/image 8 (1).png'),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                             GestureDetector(
+                                  onTap: () {
+                                    
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                             AcademyScreen()),
+                                    );
+                                  },
+                            child:Text(
+                              'Academy',
+                              style: TextStyle(
+                                color: Color(0xFFAAAAAA),
+                                fontSize: 12,
+                                fontFamily: 'Inter',
+                                fontWeight: FontWeight.w400,
+                                height: 0,
+                              ),
+                            ),
+                             ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(width: 36),
+                      Container(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 24,
+                              height: 24,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      'assets/images/image 8 (2).png'),
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                             GestureDetector(
+                                  onTap: () {
+                                   
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                             SettingsPage()),
+                                    );
+                                  },
+                            child:Text(
+                              'Settings',
+                              style: TextStyle(
+                                color: Color(0xFFAAAAAA),
+                                fontSize: 12,
+                                fontFamily: 'Inter',
+                                fontWeight: FontWeight.w400,
+                                height: 0,
+                              ),
+                            ),
+                             ),
+                          ],
                         ),
                       ),
                     ],
                   ),
                 ),
-                const SizedBox(width: 36),
-                Container(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 24,
-                        height: 24,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/image 8 (1).png'),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Buy/Sell',
-                        style: TextStyle(
-                          color: Color(0xFFAAAAAA),
-                          fontSize: 12,
-                          fontFamily: 'Inter',
-                          fontWeight: FontWeight.w400,
-                          height: 0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 36),
-                Container(
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 24,
-                        height: 24,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/image 10.png'),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Academy',
-                        style: TextStyle(
-                          color: Color(0xFFAAAAAA),
-                          fontSize: 12,
-                          fontFamily: 'Inter',
-                          fontWeight: FontWeight.w400,
-                          height: 0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 36),
-                // Buy/Sell
-                Container(
-                  height: double.infinity,
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 24,
-                        height: 24,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage('assets/images/image 8 (2).png'),
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      GestureDetector(
-                        onTap: () {
-                          
-                        
-                        },
-                        child: Text(
-                          'Settings',
-                          style: TextStyle(
-                            color: Color(0xFFAAAAAA),
-                            fontSize: 12,
-                            fontFamily: 'Inter',
-                            fontWeight: FontWeight.w400,
-                            height: 0,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                
               ],
             ),
           ),
-
         ],
       ),
     );

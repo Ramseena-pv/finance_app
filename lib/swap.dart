@@ -1,3 +1,4 @@
+import 'package:finance/home.dart';
 import 'package:flutter/material.dart';
 class Swap extends StatelessWidget {
   const Swap({Key? key}) : super(key: key);
@@ -9,8 +10,11 @@ class Swap extends StatelessWidget {
         backgroundColor: const Color(0xFF17171F),
         leading: IconButton(
           icon: Image.asset('assets/images/Frame 5.png'),
-          onPressed: () {
-            // Add your onPressed action here
+          onPressed: () { Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Home()),
+            ); 
+            
           },
         ),
         title: const Padding(
@@ -50,7 +54,7 @@ class Swap extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Spacer(), // Added Spacer to separate the texts
+                    Spacer(), 
                     Padding(
                       padding: EdgeInsets.only(top: 10),
                       child: Text(
@@ -102,7 +106,7 @@ class Swap extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                      width: 16), // Added space between the icon and text
+                      width: 16), 
                   const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -127,7 +131,7 @@ class Swap extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const Spacer(), // Added Spacer to separate the texts
+                  const Spacer(), 
                   const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -163,7 +167,7 @@ class Swap extends StatelessWidget {
             ),
             const SizedBox(
                 height:
-                    20), // Added vertical spacing before the additional content
+                    20), 
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -184,7 +188,7 @@ class Swap extends StatelessWidget {
                     ),
                     const SizedBox(
                         width: 200,
-                        height: 10), // Added space between the text and icon
+                        height: 10), 
                     Container(
                       width: 32,
                       height: 32,
@@ -240,7 +244,7 @@ class Swap extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                          width: 16), // Added space between the icon and text
+                          width: 16), 
                       const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -265,7 +269,7 @@ class Swap extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const Spacer(), // Added Spacer to separate the texts
+                      const Spacer(), 
                       const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
