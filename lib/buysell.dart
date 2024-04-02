@@ -1,7 +1,7 @@
-import 'package:finance/academy.dart';
-import 'package:finance/home.dart';
 import 'package:finance/settins.dart';
 import 'package:flutter/material.dart';
+import 'package:finance/academy.dart';
+import 'package:finance/home.dart';
 
 class BuySellPage extends StatelessWidget {
   @override
@@ -22,7 +22,6 @@ class BuySellPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 20),
-             
             Container(
               width: 410,
               height: 106,
@@ -53,7 +52,6 @@ class BuySellPage extends StatelessWidget {
                                 image: DecorationImage(
                                   image: NetworkImage(
                                       "https://via.placeholder.com/32x32"),
-                                  
                                 ),
                               ),
                             ),
@@ -102,7 +100,7 @@ class BuySellPage extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  const Positioned(
+                                  Positioned(
                                     left: 44,
                                     top: 4,
                                     child: Text(
@@ -116,6 +114,21 @@ class BuySellPage extends StatelessWidget {
                                       ),
                                     ),
                                   ),
+                                  SizedBox(width: 8),
+                                   Positioned(
+        left: 78,
+        top: 6,
+        child:Container(
+                                    width: 12, // Adjust the width of the image container as needed
+                                    height: 12, // Adjust the height of the image container as needed
+                                    decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                        image: AssetImage('assets/images/Arrow 1.png'),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                   ),
                                 ],
                               ),
                             ),
@@ -150,8 +163,7 @@ class BuySellPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Positioned(
-                     
+                  Positioned(
                     left: 15,
                     top: 0,
                     child: Text(
@@ -165,7 +177,7 @@ class BuySellPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Positioned(
+                  Positioned(
                     left: 260,
                     top: 9,
                     child: Text(
@@ -184,21 +196,17 @@ class BuySellPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 40),
-            const Positioned(
-              left: 1,
-              top: 0,
-              child: Text(
-                'You recieve',
-                style: TextStyle(
-                  color: Color(0xFFF5F5F5),
-                  fontSize: 20,
-                  fontFamily: 'Poppins',
-                  fontWeight: FontWeight.w500,
-                  height: 0,
-                ),
+            const Text(
+              'You receive',
+              style: TextStyle(
+                color: Color(0xFFF5F5F5),
+                fontSize: 20,
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w500,
+                height: 0,
               ),
             ),
-            const SizedBox(height: 20), 
+            const SizedBox(height: 20),
             Container(
               width: 410,
               height: 75,
@@ -223,10 +231,9 @@ class BuySellPage extends StatelessWidget {
                   SizedBox(
                     width: 185,
                     height: 60,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
                           width: 32,
@@ -238,17 +245,27 @@ class BuySellPage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const Positioned(
-                          left: 50,
-                          top: 2,
-                          child: Text(
-                            'Bitcoin',
-                            style: TextStyle(
-                              color: Color(0xFFF5F5F5),
-                              fontSize: 16,
-                              fontFamily: 'Poppins',
-                              fontWeight: FontWeight.w500,
-                              height: 0,
+                        const SizedBox(width: 8), // Adjust the spacing between the image and the text
+                        const Text(
+                          'Bitcoin',
+                          style: TextStyle(
+                            color: Color(0xFFF5F5F5),
+                            fontSize: 16,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        const SizedBox(width: 8), // Adjust the spacing between the text and the image
+                        Positioned(
+                          left: 40, // Adjust the left position as needed
+                          child: Container(
+                            width: 12, // Adjust the width of the image container as needed
+                            height: 12, // Adjust the height of the image container as needed
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/images/Arrow 1.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
@@ -260,7 +277,7 @@ class BuySellPage extends StatelessWidget {
                     width: 91, 
                     height: double.infinity,
                     padding: const EdgeInsets.only(
-                        top: 10, bottom: 9, left: 4), 
+                      top: 10, bottom: 9, left: 4), 
                     child: const Row(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -301,128 +318,126 @@ class BuySellPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 8),
-                Container(
-                  width: 410,
-                  height: 192,
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 13, horizontal: 13),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFF252530),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 410,
-                        padding: const EdgeInsets.only(
-                          top: 20,
-                          left: 16,
-                          right: 16,
-                          bottom: 10,
-                        ),
-                        clipBehavior: Clip.antiAlias,
-                        decoration: ShapeDecoration(
-                          shape: RoundedRectangleBorder(
-                            side:
-                                const BorderSide(width: 1, color: Color(0xFFAAAAAA)),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            const Text(
-                              'Google pay',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                color: Color(0xFFAAAAAA),
-                                fontSize: 14,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.w500,
-                                height: 0,
-                              ),
-                            ),
-                            const SizedBox(width: 154),
-                            Container(
-                              width: 28,
-                              height: 28,
-                              decoration: const BoxDecoration(
-                                image: DecorationImage(
-                                  image: AssetImage('assets/images/image8.png'),
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Container(
-                        width: 410,
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 16, vertical: 11),
-                        clipBehavior: Clip.antiAlias,
-                        decoration: ShapeDecoration(
-                          shape: RoundedRectangleBorder(
-                            side: const BorderSide(
-                              width: 1,
-                              color: Color(0xFFF5F5F5),
-                            ),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            const Text(
-                              'Visa*3783',
-                              style: TextStyle(
-                                color: Color(0xFFF5F5F5),
-                                fontSize: 14,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.w500,
-                                height: 0,
-                              ),
-                            ),
-                            const SizedBox(width: 165),
-                            Container(
-                              width: 28,
-                              height: 28,
-                              decoration: const BoxDecoration(
-                                image: DecorationImage(
-                                  image: AssetImage('assets/images/image9.png'),
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      const Text(
-                        '+ ADD NEW PAYMENT METHOD',
-                        style: TextStyle(
-                          color: Color(0xFFF5F5F5),
-                          fontSize: 16,
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.w500,
-                          height: 0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
               ],
             ),
-
+            const SizedBox(height: 8),
+            Container(
+              width: 410,
+              height: 192,
+              padding: const EdgeInsets.symmetric(vertical: 13, horizontal: 13),
+              clipBehavior: Clip.antiAlias,
+              decoration: ShapeDecoration(
+                color: const Color(0xFF252530),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 410,
+                    padding: const EdgeInsets.only(
+                      top: 20,
+                      left: 16,
+                      right: 16,
+                      bottom: 10,
+                    ),
+                    clipBehavior: Clip.antiAlias,
+                    decoration: ShapeDecoration(
+                      shape: RoundedRectangleBorder(
+                        side:
+                            const BorderSide(width: 1, color: Color(0xFFAAAAAA)),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const Text(
+                          'Google pay',
+                        
+                          style: TextStyle(
+                            color: Color(0xFFAAAAAA),
+                            fontSize: 14,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w500,
+                            height: 0,
+                          ),
+                        ),
+                        const SizedBox(width: 154),
+                        Container(
+                          width: 28,
+                          height: 28,
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/image8.png'),
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Container(
+                    width: 410,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 11),
+                    clipBehavior: Clip.antiAlias,
+                    decoration: ShapeDecoration(
+                      shape: RoundedRectangleBorder(
+                        side: const BorderSide(
+                          width: 1,
+                          color: Color(0xFFF5F5F5),
+                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const Text(
+                          'Visa*3783',
+                          style: TextStyle(
+                            color: Color(0xFFF5F5F5),
+                            fontSize: 14,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.w500,
+                            height: 0,
+                          ),
+                        ),
+                        const SizedBox(width: 165),
+                        Container(
+                          width: 28,
+                          height: 28,
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/images/image9.png'),
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    '+ ADD NEW PAYMENT METHOD',
+                    style: TextStyle(
+                      color: Color(0xFFF5F5F5),
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w500,
+                      height: 0,
+                    ),
+                  ),
+                ],
+              ),
+            ),
             const SizedBox(height: 100),
             Container(
               width: 400,
@@ -435,7 +450,7 @@ class BuySellPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                 ),
               ),
-              child: const Row(
+              child: Row(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -466,16 +481,14 @@ class BuySellPage extends StatelessWidget {
               ),
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
-                 borderRadius: BorderRadius.circular(24),
-                            border: const Border(
-                              top: BorderSide(
-                                width: 1,
-                                color: Color.fromARGB(255, 238, 238, 240),
-                              ),
-                            ),
-                          ),
-                
-                 
+                borderRadius: BorderRadius.circular(24),
+                border: const Border(
+                  top: BorderSide(
+                    width: 1,
+                    color: Color.fromARGB(255, 238, 238, 240),
+                  ),
+                ),
+              ),
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -499,21 +512,19 @@ class BuySellPage extends StatelessWidget {
                                 height: 24,
                                 decoration: const BoxDecoration(
                                   image: DecorationImage(
-                                    image:
-                                        AssetImage('assets/images/image 8.png'),
+                                    image: AssetImage('assets/images/image 8.png'),
                                     fit: BoxFit.fill,
                                   ),
                                 ),
                               ),
                               const SizedBox(height: 4),
                               GestureDetector(
-                                
                                 onTap: () {
-                                
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => const Home()),
+                                      builder: (context) => const Home(),
+                                    ),
                                   );
                                 },
                                 child: const Text(
@@ -526,6 +537,8 @@ class BuySellPage extends StatelessWidget {
                                     height: 0,
                                   ),
                                 ),
+                             
+
                               ),
                             ],
                           ),

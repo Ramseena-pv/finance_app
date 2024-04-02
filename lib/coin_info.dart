@@ -1,16 +1,12 @@
+import 'package:finance/home.dart';
 import 'package:finance/recieve.dart';
 import 'package:finance/send.dart';
 import 'package:finance/swap.dart';
 import 'package:flutter/material.dart';
 
-class CoininfoScreen extends StatefulWidget {
+class  CoininfoScreen extends StatelessWidget {
   const CoininfoScreen({Key? key}) : super(key: key);
 
-  @override
-  State<CoininfoScreen> createState() => _CoininfoScreenState();
-}
-
-class _CoininfoScreenState extends State<CoininfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,8 +42,13 @@ class _CoininfoScreenState extends State<CoininfoScreen> {
                 Row(
                   children: [
                     GestureDetector(
-                      onTap: () {
-                        Navigator.popUntil(context, ModalRoute.withName('/'));
+                      onTap: () {Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  Home()),
+                                        );
+                      
                       },
                       child: const Icon(
                         Icons.keyboard_arrow_left,
